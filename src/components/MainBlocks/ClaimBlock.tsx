@@ -1,8 +1,12 @@
+import { Button } from "../Common/Button";
 
 export default function ClaimBlock() {
     return (
-        <section className="container mx-auto px-4 flex flex-row items-center py-12 bg-white">
-            <h1 className="text-3xl md:text-5xl font-anek-latin font-bold">Everyone deserves the power to create digital agents, <span className="decoration-solid inline-block bg-gradient-primary text-transparent bg-clip-text">no coding required.</span> We’re transforming agent creation into a rewarding, engaging adventure through gamification.</h1>
+        <section className="border border-t-0 border-b-0 container mx-auto py-36 p-12">
+            <h2 className="max-w-5xl text-5xl font-space mb-12">
+                [NAME] organizes your digital world in one clear view, filters the noise, and works ahead of you so you stay focused on what really matters.
+            </h2>
+            <Button variant="dark" href="#" className="!px-32 !py-6 text-xl">CTA</Button>
         </section>
     )
 }

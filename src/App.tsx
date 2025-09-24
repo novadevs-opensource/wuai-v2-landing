@@ -1,9 +1,9 @@
-import SamplePage from './pages/SamplePage';
+import IndexPage from './pages/IndexPage';
 
 const App = () => {
   return (
     <>
-      <SamplePage/>
+      <IndexPage/>
     </>
   );
 }

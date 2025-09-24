@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    user-select: none;
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: unset;
+  margin-top: 2em !important;
+}
+
+.swiper-pagination-bullet {
+  width: 48px !important;
+  height: 9px !important;
+  border-radius: 100px !important;
+  background: #dedede !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: white !important;
+  width: 147px !important;
+  height: 9px !important;
+  border-radius: 100px !important;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+  position: absolute !important;
+  left: 0 !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 3em !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-vertical .swiper-pagination-bullet {
+  height: 48px !important;
+  width: 9px !important;
+  border-radius: 100px !important;
+  background: black !important;
+  opacity: 1;
+}
+
+.swiper-pagination-vertical .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: white !important;
+  height: 147px !important;
+  width: 9px !important;
+  border-radius: 100px !important;
+  background: #dedede !important;
+  opacity: 1;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--marquee-width)));
+  }
+}
+
+/* Metaballs */
+@keyframes float-slow {
+  0%, 100% {
+      transform: translateY(0px) translateX(0px);
+  }
+  33% {
+      transform: translateY(-20px) translateX(10px);
+  }
+  66% {
+      transform: translateY(20px) translateX(-10px);
+  }
+} 
+@keyframes float-medium {
+  0%, 100% {
+      transform: translateY(0px) translateX(0px);
+  }
+  25% {
+      transform: translateY(-30px) translateX(-20px);
+  }
+  50% {
+      transform: translateY(15px) translateX(15px);
+  }
+  75% {
+      transform: translateY(-10px) translateX(25px);
+  }
+} 
+@keyframes float-fast {
+  0%, 100% {
+      transform: translateY(0px) translateX(0px);
+  }
+  20% {
+      transform: translateY(30px) translateX(-30px);
+  }
+  40% {
+      transform: translateY(-25px) translateX(20px);
+  }
+  60% {
+      transform: translateY(20px) translateX(30px);
+  }
+  80% {
+      transform: translateY(-30px) translateX(-20px);
+  }
+} 
+@keyframes float-slower {
+  0%, 100% {
+      transform: translateY(0px) translateX(0px) scale(1);
+  }
+  50% {
+      transform: translateY(-40px) translateX(30px) scale(1.1);
+  }
+} 
+@keyframes float-orbit {
+  0% {
+      transform: rotate(0deg) translateX(80px) rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg) translateX(80px) rotate(-360deg);
+  }
+} 
+
+/* Metaballs */
+.animate-float-slow {
+  animation: float-slow 18s ease-in-out infinite;
+} 
+.animate-float-medium {
+  animation: float-medium 16s ease-in-out infinite;
+} 
+.animate-float-fast {
+  animation: float-fast 14s ease-in-out infinite;
+} 
+.animate-float-slower {
+  animation: float-slower 20s ease-in-out infinite;
+} 
+.animate-float-orbit {
+  animation: float-orbit 25s linear infinite;
+}

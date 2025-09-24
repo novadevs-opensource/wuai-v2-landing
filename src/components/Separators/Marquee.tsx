@@ -8,6 +8,7 @@ interface MarqueeProps {
   className?: string;
   copyableText?: string;
   spacing?: number;
+  enableCopy?: boolean;
 }
 
 const Marquee: React.FC<MarqueeProps> = ({
@@ -18,6 +19,7 @@ const Marquee: React.FC<MarqueeProps> = ({
   className = '',
   copyableText,
   spacing = 200,
+  enableCopy = false,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -67,7 +69,7 @@ const Marquee: React.FC<MarqueeProps> = ({
       
       // Crear el elemento de texto con espaciado
       const span = document.createElement('span');
-      span.className = 'inline-block font-bold font-anek-latin';
+      span.className = 'inline-block font-bold font-anon';
       span.textContent = text;
       
       const spacer = document.createElement('span');
@@ -147,7 +149,7 @@ const Marquee: React.FC<MarqueeProps> = ({
       />
       
       {/* Tooltip que sigue al cursor */}
-      {isPaused && (
+      {(isPaused && enableCopy) && (
         <div 
           className="absolute bg-gray-800 text-white text-xs rounded px-2 py-1 z-10 pointer-events-none"
           style={{

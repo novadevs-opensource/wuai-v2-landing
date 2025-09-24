@@ -18,11 +18,11 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   target = '_self',
 }) => {
-  const baseStyles = "inline-flex py-2 lg:px-14 px-9 shadow-md font-normal font-afacad uppercase justify-center rounded-full border-2 border-black transition-colors";
+  const baseStyles = "inline-flex py-4 px-12 font-semibold text-sm font-anek-latin uppercase justify-center rounded-md transition-all";
   
   const variantStyles = {
-    dark: "bg-black-dark text-white hover:bg-white hover:text-black",
-    light: "bg-white text-black-dark hover:bg-black hover:text-white"
+    dark: "bg-primary-500 text-white hover:opacity-50",
+    light: "bg-white text-primary-500 hover:opacity-50"
   };
 
   const combinedStyles = `${baseStyles} ${variantStyles[variant]} ${className}`;

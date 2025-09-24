@@ -1,6 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import mainLogo from '../../assets/images/sample-logo-main.svg'
+import mainLogo from '../../assets/images/wuai-logo-purple.svg'
 import { Button } from './Button'
 
 const navigation = [
@@ -14,8 +14,8 @@ function classNames(...classes: string[]) {
 
 export default function TopNav() {
   return (
-    <Disclosure as="nav">
-      <div className="mx-auto px-2 w-full max-w-screen-2xl sm:px-6 lg:px-12">
+    <Disclosure as="nav" className="border border-b-1 border-t-0">
+      <div className="mx-auto px-2 py-4 w-full container sm:px-6 lg:px-12 border border-t-0 border-b-0">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-between">
             {/* Logo */}
@@ -35,8 +35,8 @@ export default function TopNav() {
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white',
-                      'rounded-md px-3 py-2 text-sm font-medium self-center',
+                      item.current ? '' : 'hover:underline',
+                      'text-black rounded px-3 py-2 text-sm font-semibold uppercase font-anek-latin self-center',
                     )}
                   >
                     {item.name}

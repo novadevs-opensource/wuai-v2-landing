@@ -1,27 +1,41 @@
+import { FaPlay, FaTelegram, FaXTwitter } from "react-icons/fa6";
+import logoWhite from "../../assets/images/wuai-logo-white.svg"
 
 export default function Footer() {
     return (
-        <section className="p-4 bg-black -mt-2">
-            <div className="container mx-auto flex md:flex-row gap-3 flex-col md:items-center justify-between">
-                <p className="text-white text-afacad text-sm">2025 © sample.agency</p>
-                <div className="flex md:flex-row flex-col gap-3">
-                    <p className="text-white text-afacad text-sm">
-                        <a href="https://sample.gitbook.io/doc/1.-project-overview" target="_blank">About</a>
-                    </p>
-
-                    <p className="text-white text-afacad text-sm hidden md:block">/</p>
-                    <p className="text-white text-afacad text-sm">
-                        <a href="https://sample.gitbook.io/doc/4.-tokenomics" target="_blank">Whitepaper</a>
-                    </p>
-                    <p className="text-white text-afacad text-sm hidden md:block">/</p>
-                    <p className="text-white text-afacad text-sm">
-                        <a href="https://x.com/sampleSOL" target="_blank">X</a>
-                    </p>
-
-                    <p className="text-white text-afacad text-sm hidden md:block">/</p>
-                    <p className="text-white text-afacad text-sm">
-                        <a href="https://sample.gitbook.io/doc" target="_blank">Doc</a>
-                    </p>
+        <section className="bg-black">
+            <div className="container mx-auto text-white py-24">
+                <div className="w-1/2">
+                    <h3 className="font-space text-4xl mb-4">Lorem ipsum dolor</h3>
+                    <p className="font-anek-latin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit dolores minima sapiente molestiae molestias quae, voluptas consequatur similique recusandae aut, sed officia rerum, assumenda saepe earum necessitatibus quasi ab adipisci.</p>
+                    <div className="mt-12">
+                        <a className="font-anek-latin uppercase flex flex-row items-center gap-4 hover:opacity-50 hover:underline" href="#">
+                            <span>Contact us</span>
+                            <span className="bg-primary-500 rounded-full h-8 w-8 flex items-center justify-center">
+                                <FaPlay/>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <div className="flex flex-row justify-end gap-2">
+                        <a className="rounded-full h-12 w-12 bg-white flex items-center justify-center hover:opacity-50" target="_blank" href="#">
+                            <FaTelegram className="text-black text-3xl"/>
+                        </a>
+                        <a className="rounded-full h-12 w-12 bg-white flex items-center justify-center hover:opacity-50" target="_blank" href="#">
+                            <FaXTwitter className="text-black text-3xl"/>
+                        </a>
+                    </div>
+                    <div className="border border-gray-600 border-l-0 border-b-0 border-r-0 my-6"></div>
+                    <div className="flex flex-row items-center justify-between">
+                        <img src={logoWhite} />
+                        <div className="flex flex-row gap-4 text-gray-300">
+                            <a href="#" className="hover:opacity-50">Lorem ipsum</a>
+                            <a href="#" className="hover:opacity-50">Lorem ipsum</a>
+                            <a href="#" className="hover:opacity-50">Lorem ipsum</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

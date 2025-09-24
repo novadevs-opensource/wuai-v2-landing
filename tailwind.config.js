@@ -46,6 +46,12 @@ export default {
           700: '#3e6655',
           800: '#1f332a',
           900: '#0f1915',
+        },
+        primary: {
+          '500': '#5335FC'
+        },
+        secondary: {
+          '500': '#CEFC35'
         }
       },
       gradients: {
@@ -53,9 +59,10 @@ export default {
         'secondary': 'linear-gradient(90deg, #82EAFF 0%, #9BFFD4 100%)',
       },
       fontFamily: {
-        "afacad": ['Afacad', 'sans-serif'],
         "anek-latin": ['Anek Latin', 'sans-serif'],
-      }
+        "space": ['Space Grotesk', 'sans-serif'],
+        "anon": ['Anonymous Pro', 'serif']
+      },
     },
   },
   plugins: [
