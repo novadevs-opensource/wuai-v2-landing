@@ -2,7 +2,7 @@ import screenshot from '../../assets/images/screenshot.png'
 
 export default function Features() {
     return (
-        <section className="border border-t-0 border-b-0 container mx-auto py-36 p-12">
+        <section className="border border-gray-400 border-t-0 border-b-0 container mx-auto py-36 p-12">
             <div className="grid grid-cols-3 gap-4">
                 <div className="flex flex-col justify-between">
                     <div className="flex flex-col gap-2">

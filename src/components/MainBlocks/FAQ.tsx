@@ -17,7 +17,7 @@ export default function FAQ() {
     ]
     return (
         <div className="bg-secondary-500">
-            <section className="border border-t-0 border-b-0 container mx-auto py-36 p-12">
+            <section className="border border-gray-400 border-t-0 border-b-0 container mx-auto py-36 p-12">
                 <h2 className="w-full text-5xl font-space mb-12 text-center font-bold">
                     Frequently Asked Questions
                 </h2>

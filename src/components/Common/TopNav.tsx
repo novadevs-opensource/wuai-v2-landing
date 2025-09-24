@@ -14,8 +14,8 @@ function classNames(...classes: string[]) {
 
 export default function TopNav() {
   return (
-    <Disclosure as="nav" className="border border-b-1 border-t-0">
-      <div className="mx-auto px-2 py-4 w-full container sm:px-6 lg:px-12 border border-t-0 border-b-0">
+    <Disclosure as="nav" className="border border-gray-400 border-b-1 border-t-0">
+      <div className="mx-auto px-2 py-4 w-full container sm:px-6 lg:px-12 border border-gray-400 border-t-0 border-b-0">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-between">
             {/* Logo */}

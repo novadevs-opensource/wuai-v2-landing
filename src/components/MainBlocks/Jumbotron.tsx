@@ -56,7 +56,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ title, ctas, mainClaim }) => {
     }, [displayedText, isDeleting, currentCtaIndex, ctas]);
     
     return (
-        <section className="border border-t-0 border-b-0 container mx-auto">
+        <section className="border border-gray-400 border-t-0 border-b-0 container mx-auto">
             <div className="py-48 px-12 flex flex-col relative overflow-hidden">
                 <div className="w-fit flex flex-row relative mb-6">
                     <h1 className="text-3xl font-bold">{title}</h1>
