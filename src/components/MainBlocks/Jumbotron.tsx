@@ -57,13 +57,13 @@ const Jumbotron: React.FC<JumbotronProps> = ({ title, ctas, mainClaim }) => {
     
     return (
         <section className="border border-gray-400 border-t-0 border-b-0 container mx-auto">
-            <div className="py-48 px-12 flex flex-col relative overflow-hidden">
-                <div className="w-fit flex flex-row relative mb-6">
-                    <h1 className="text-3xl font-bold">{title}</h1>
-                    <img src={iconPlane} className="right-[-100%] top-[80%] absolute"/>
+            <div className="lg:pt-48 lg:px-12 px-6 py-12 flex flex-col relative overflow-hidden">
+                <div className="w-fit flex flex-row relative lg:mb-6 mb-1">
+                    <h1 className="lg:text-3xl text-xl font-bold">{title}</h1>
+                    <img src={iconPlane} className="absolute lg:right-[-100%] right-[-50%] top-[20%] lg:h-10 h-6"/>
                 </div>
                 <div className="">
-                    <h2 className="mb-8 text-6xl font-bold font-space">
+                    <h2 className="mb-8 lg:text-6xl text-4xl font-bold font-space">
                         <span>{mainClaim}</span>
                         {ctas.length > 0 && (
                             <>
@@ -79,12 +79,12 @@ const Jumbotron: React.FC<JumbotronProps> = ({ title, ctas, mainClaim }) => {
                 <div>
                     <Button variant="dark" href="#">Launch App</Button>
                 </div>
-                <div className="grid grid-cols-5 justify-items-center items-center mt-40 bg-white">
-                    <img src={solana} alt="brand logo" className="h-4 mix-blend-luminosity opacity-50"/>
-                    <img src={aws} alt="brand logo" className="h-6 mix-blend-luminosity"/>
-                    <img src={phantom} alt="brand logo" className="h-6 mix-blend-luminosity"/>
-                    <img src={openrouter} alt="brand logo" className="h-6 mix-blend-luminosity opacity-50"/>
-                    <img src={privy} alt="brand logo" className="h-5 mix-blend-luminosity opacity-50"/>
+                <div className="grid grid-cols-5 gap-4 justify-items-center items-center lg:mt-48 mt-20 bg-white">
+                    <img src={solana} alt="brand logo" className="lg:h-4 h-2 mix-blend-luminosity opacity-50"/>
+                    <img src={privy} alt="brand logo" className="lg:h-5 h-2 mix-blend-luminosity opacity-50"/>
+                    <img src={phantom} alt="brand logo" className="lg:h-6 mix-blend-luminosity"/>
+                    <img src={aws} alt="brand logo" className="lg:h-6 h-3 mix-blend-luminosity"/>
+                    <img src={openrouter} alt="brand logo" className="lg:h-6 mix-blend-luminosity opacity-50"/>
                 </div>
                 <Metaballs/>
             </div>

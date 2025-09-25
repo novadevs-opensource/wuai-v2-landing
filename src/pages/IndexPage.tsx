@@ -14,9 +14,9 @@ const IndexPage = () => {
             title: 'More Time. Less Noise.',
             mainClaim: 'Reclaim your',
             claims: [
-                'Inbox.',
-                'TL.',
-                'Time.'
+                'Inbox',
+                'TL',
+                'Time'
             ],
         }
     };

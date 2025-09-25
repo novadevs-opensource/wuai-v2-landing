@@ -99,7 +99,7 @@ export default function Metaballs() {
     return (
         <div 
             ref={metaballsRef}
-            className="absolute right-0 -top-10 w-[600px] h-[600px] pointer-events-none"
+            className="absolute lg:right-0 left-[50%] lg:-top-10 top-[35%] lg:w-[600px] lg:h-[600px] h-[150px] w-[150px] pointer-events-none"
         >
             {/* SVG Filter for Gooey Effect */}
             <svg className="absolute w-0 h-0">
