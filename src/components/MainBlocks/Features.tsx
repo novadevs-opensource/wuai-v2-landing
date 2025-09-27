@@ -40,9 +40,9 @@ export default function Features() {
                         <p className="font-anek-latin font-bold uppercase">Start Securely</p>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">One clear view</h3>
-                        <p className="font-anek-latin">See/Monitorize key emails, messages, and updates in one place. All emails, messages, and social feeds in one smart place. No more app switching.</p>
-                        <p className="font-anek-latin font-bold uppercase">Get a partner that grows with you</p>
+                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Behaviorl agents</h3>
+                        <p className="font-anek-latin">[NAME] operates by selecting actions based on its current state and context, mimicking human-like decision-making processes by incorporating factors like emotions, cognitive patterns, and environmental rules.</p>
+                        <p className="font-anek-latin font-bold uppercase">Get a partner that addapts with you</p>
                     </div>
                 </div>
             </div>
