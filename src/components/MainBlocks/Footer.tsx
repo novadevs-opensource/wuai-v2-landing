@@ -31,9 +31,9 @@ export default function Footer() {
                     <div className="flex md:flex-row flex-col md:items-center md:justify-between">
                         <img src={logoWhite} className="w-1/3 md:w-auto mb-4" />
                         <div className="flex flex-row gap-4 text-gray-300">
-                            <a href="#" className="hover:opacity-50">Lorem ipsum</a>
-                            <a href="#" className="hover:opacity-50">Lorem ipsum</a>
-                            <a href="#" className="hover:opacity-50">Lorem ipsum</a>
+                            <a href="#" className="hover:opacity-50">Whitepaper</a>
+                            <a href="#" className="hover:opacity-50">Documentation</a>
+                            <a href="#" className="hover:opacity-50">Support</a>
                         </div>
                     </div>
                     <div className="flex flex-row gap-2 md:hidden block mt-4">
