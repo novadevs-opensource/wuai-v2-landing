@@ -6,31 +6,31 @@ export default function Pains() {
     return (
         <section className="bg-primary-500 font-anek-latin text-white xl:p-40 md:px-24 px-6 py-16">
             <div className="md:max-w-xl mx-auto text-center">
-                <h1 className="lg:text-6xl md:text-5xl text-4xl mb-12 font-bold font-space">Take back control of your day</h1>
+                <h1 className="lg:text-6xl md:text-5xl text-4xl mb-12 font-bold font-space">Agents without infrastructure are not agents</h1>
                 <p className="text-sm md:text-lg">
-                    Your digital life is a mess. It’s a constant stream of information that’s hard to manage. You feel like you’re always one step behind, spending your day sifting through irrelevant content instead of being productive.
+                    The ecosystem is full of agents that work in demos, but fail when exposed to real-world production constraints. Setup, build and deploy your agents in a production-ready environment.
                 </p>
             </div>
             <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-16 mt-20">
                 <div>
                     <img src={upload}/>
-                    <h3 className="uppercase font-bold my-6">Social media struggle</h3>
+                    <h3 className="uppercase font-bold my-6">Lack of technical standardization</h3>
                     <p className="text-sm md:text-lg">
-                        Good content exists, but distractions waste your time. [NAME] puts everything together. It shows only what matters, so you always know what’s important.
+                        Each framework defines its own models, plugins, lifecycle, and APIs. Integrating them into a coherent system requires custom engineering and ongoing maintenance.
                     </p>
                 </div>
                 <div>
                     <img src={upload}/>
-                    <h3 className="uppercase font-bold my-6">Always ahead</h3>
+                    <h3 className="uppercase font-bold my-6">Lack of democratized deployment</h3>
                     <p className="text-sm md:text-lg">
-                        [NAME] works ahead for you. It checks your calendar and inbox, prepares meeting notes, drafts urgent replies, and suggests social media content.
+                        Deploying an agent to production requires infrastructure, deployment, and operational expertise that limits adoption beyond specialized technical teams.
                     </p>
                 </div>
                 <div>
                     <img src={upload}/>
-                    <h3 className="uppercase font-bold my-6">Digital overload</h3>
+                    <h3 className="uppercase font-bold my-6">Complexity of real-world integration</h3>
                     <p className="text-sm md:text-lg">
-                        Too many apps and notifications. Hard to keep up. You react to messages instead of doing important work. Digital stress makes you feel worn out and less creative.
+                        Running agents in real environments without an infrastructure layer, every integration becomes a unique and difficult problem to scale.
                     </p>
                 </div>
             </div>

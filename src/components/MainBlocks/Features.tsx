@@ -1,4 +1,5 @@
 import screenshot from '../../assets/images/screenshot.png'
+import solana from "../../assets/images/brands/solana.png"
 
 export default function Features() {
     return (
@@ -7,20 +8,20 @@ export default function Features() {
                 {/* desktop hidden */}
                 <div className="flex flex-col justify-between gap-8">
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">A Partner That Learns</h3>
-                        <p className="font-anek-latin">[NAME] is a growing partner. It learns your needs and style, giving better tips every time.</p>
-                        <p className="font-anek-latin font-bold uppercase">Get a partner that grows with you</p>
+                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Multi-framework creation</h3>
+                        <p className="font-anek-latin">Create and manage agents built on widely used frameworks: OpenAI, LLaMA, ElizaOS, Ollama, Cohere.</p>
+                        <p className="font-anek-latin font-bold uppercase">All executed under a unified operational model, with integrated access to their plugin ecosystems.</p>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Unify your digital life</h3>
-                        <p className="font-anek-latin">All in one place. [NAME] puts emails, messages, and social feeds on one smart dashboard. Stop wasting time switching apps.</p>
-                        <p className="font-anek-latin font-bold uppercase">Start your day with clarity or say “gm” with clarity</p>
+                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Self-service infrastructure</h3>
+                        <p className="font-anek-latin">GPU, CPU, RAM, and storage. Horizontal and vertical scaling on demand, without operational friction.</p>
+                        <p className="font-anek-latin font-bold uppercase">Assign dedicated resources per agent</p>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Communicate in your voice</h3>
-                        <p className="font-anek-latin">[NAME] matches your tone. It knows when to be formal or casual, so every message feels like you.</p>
-                        <p className="font-anek-latin">No more switching tones. [NAME] keeps your tone consistent and authentic everywhere.</p>
-                        <p className="font-anek-latin font-bold uppercase">Let [NAME] speak for you / unify your tone / build your AI voice</p>
+                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Universal API</h3>
+                        <p className="font-anek-latin">Consume your agents wherever you need them.</p>
+                        <p className="font-anek-latin">Access via REST, SDKs, or webhooks.</p>
+                        <p className="font-anek-latin font-bold uppercase">Direct integration with applications, products, or existing systems.</p>
                     </div>
                 </div>
 
@@ -30,9 +31,13 @@ export default function Features() {
 
                 <div className="flex flex-col justify-between gap-8">
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Your AI that’s always ahead</h3>
-                        <p className="font-anek-latin">[NAME] works before you ask. It suggests replies, drafts posts, and manages tasks so you can focus on what matters.</p>
-                        <p className="font-anek-latin font-bold uppercase">Automate your day</p>
+                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Native monetization</h3>
+                        <p className="font-anek-latin">Expose agents as services</p>
+                        <ul className="font-anek-latin list-disc list-inside">
+                            <li>Usage metering</li>
+                            <li>Access plans</li>
+                        </ul>
+                        <p className="font-anek-latin font-bold uppercase">No external layers required.</p>
                     </div>
                     <div className="flex flex-col gap-2">
                         <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Security first, always</h3>
@@ -40,11 +45,19 @@ export default function Features() {
                         <p className="font-anek-latin font-bold uppercase">Start Securely</p>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Behaviorl agents</h3>
-                        <p className="font-anek-latin">[NAME] operates by selecting actions based on its current state and context, mimicking human-like decision-making processes by incorporating factors like emotions, cognitive patterns, and environmental rules.</p>
-                        <p className="font-anek-latin font-bold uppercase">Get a partner that addapts with you</p>
+                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Marketplace and extensions</h3>
+                        <p className="font-anek-latin">Extend agent capabilities through integrated extensions and services. Add skills, connect external sources, and compose behaviors without modifying the agent core.</p>
+                        <p className="font-anek-latin font-bold uppercase">Full access to the whole agentic ecosystem in one place</p>
                     </div>
                 </div>
+            </div>
+
+            <div className="grid grid-cols-5 gap-4 justify-items-center items-center lg:mt-48 mt-20 bg-white">
+                <img src={solana} alt="brand logo" className="lg:h-4 h-2 mix-blend-luminosity opacity-50"/>
+                <img src={solana} alt="brand logo" className="lg:h-4 h-2 mix-blend-luminosity opacity-50"/>
+                <img src={solana} alt="brand logo" className="lg:h-4 h-2 mix-blend-luminosity opacity-50"/>
+                <img src={solana} alt="brand logo" className="lg:h-4 h-2 mix-blend-luminosity opacity-50"/>
+                <img src={solana} alt="brand logo" className="lg:h-4 h-2 mix-blend-luminosity opacity-50"/>
             </div>
         </section>
     )

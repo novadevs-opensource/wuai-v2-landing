@@ -42,7 +42,7 @@ export default function TopNav() {
                     {item.name}
                   </a>
                 ))}
-                <Button variant="dark" href="#">Launch App</Button>
+                <Button variant="dark" href="#">Launch Console</Button>
               </div>
             </div>
           </div>

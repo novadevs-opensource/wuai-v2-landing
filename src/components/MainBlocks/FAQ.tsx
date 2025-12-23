@@ -3,16 +3,16 @@ import Accordion, { AccordionItem } from "../Common/Accordion";
 export default function FAQ() {
     const questions: AccordionItem[] = [
         {
-            title: 'Lorem ipsum dolor sit amet',
-            content: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed sem eget metus placerat venenatis sed eu ipsum. Cras pretium libero et tortor pharetra aliquet. Phasellus id orci id nisl aliquam feugiat.</p>
+            title: 'Do I need to know how to code?',
+            content: <p>Not necessarily. You can create agents without code, and extend them when needed using APIs, webhooks, or SDKs.</p>
         },
         {
-            title: 'Lorem ipsum dolor sit amet',
-            content: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed sem eget metus placerat venenatis sed eu ipsum. Cras pretium libero et tortor pharetra aliquet. Phasellus id orci id nisl aliquam feugiat.</p>
+            title: 'Can I run multiple agents at the same time?',
+            content: <p>Yes. Each agent runs as an independent instance with isolated, dedicated resources.</p>
         },
         {
-            title: 'Lorem ipsum dolor sit amet',
-            content: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed sem eget metus placerat venenatis sed eu ipsum. Cras pretium libero et tortor pharetra aliquet. Phasellus id orci id nisl aliquam feugiat.</p>
+            title: 'Can I monetize my agents?',
+            content: <p>Yes. The platform includes mechanisms to expose agents as services and manage access and consumption.</p>
         },
     ]
     return (
