@@ -104,7 +104,7 @@ export default function Metaballs() {
             className="
                 absolute
                 lg:right-[15%] lg:top-[35%] 
-                xl:right-[0%] xl:top-[15%]
+                xl:right-[0%] xl:top-[25%]
                 -right-[45%] top-[45%] 
 
                 lg:w-[200px] lg:h-[200px] 
