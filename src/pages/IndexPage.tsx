@@ -11,12 +11,12 @@ import Marquee from "../components/Separators/Marquee";
 const IndexPage = () => {
     const data = {
         jumbotron: {
-            title: 'Your agent infrastructure layer.',
+            title: 'Your agentic infrastructure layer.',
             mainClaim: 'All your agents',
             claims: [
-                'in one place',
-                'effortlessly',
-                'easily'
+                'unified',
+                'without CLI',
+                'production-ready',
             ],
         }
     };
@@ -33,7 +33,7 @@ const IndexPage = () => {
 
             <Features/>
             
-            <Marquee text="TOTAL CONTROL · ONE TOOL · ALL YOUR AGENTS"/>
+            <Marquee text="TOTAL CONTROL · ONE DASHBOARD · ALL YOUR AGENTS"/>
             
             <FAQ/>
 

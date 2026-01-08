@@ -10,17 +10,17 @@ export default function Features() {
                     <div className="flex flex-col gap-2">
                         <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Multi-framework creation</h3>
                         <p className="font-anek-latin">Create and manage agents built on widely used frameworks: OpenAI, LLaMA, ElizaOS, Ollama, Cohere.</p>
-                        <p className="font-anek-latin font-bold uppercase">All executed under a unified operational model, with integrated access to their plugin ecosystems.</p>
+                        <p className="font-anek-latin font-bold uppercase">All executed under a unified OS, with full access to each framework's whole plugin ecosystem.</p>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Self-service infrastructure</h3>
-                        <p className="font-anek-latin">GPU, CPU, RAM, and storage. Horizontal and vertical scaling on demand, without operational friction.</p>
-                        <p className="font-anek-latin font-bold uppercase">Assign dedicated resources per agent</p>
+                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Resource Allocation Optimize your costs</h3>
+                        <p className="font-anek-latin">Choose the exact hardware (CPU/GPU/RAM) for each agent in the cloud, or run lightweight agents locally.</p>
+                        <p className="font-anek-latin font-bold uppercase">Pay only for the resources you actually use.</p>
                     </div>
                     <div className="flex flex-col gap-2">
                         <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Universal API</h3>
-                        <p className="font-anek-latin">Consume your agents wherever you need them.</p>
-                        <p className="font-anek-latin">Access via REST, SDKs, or webhooks.</p>
+                        <p className="font-anek-latin">Integrate your agents wherever you need them.</p>
+                        <p className="font-anek-latin">Vibecode your product using our OpenAPI specification with your favorite tools.</p>
                         <p className="font-anek-latin font-bold uppercase">Direct integration with applications, products, or existing systems.</p>
                     </div>
                 </div>
@@ -31,23 +31,19 @@ export default function Features() {
 
                 <div className="flex flex-col justify-between gap-8">
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Native monetization</h3>
-                        <p className="font-anek-latin">Expose agents as services</p>
-                        <ul className="font-anek-latin list-disc list-inside">
-                            <li>Usage metering</li>
-                            <li>Access plans</li>
-                        </ul>
-                        <p className="font-anek-latin font-bold uppercase">No external layers required.</p>
+                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Your efforts are rewarded</h3>
+                        <p className="font-anek-latin">Publish your own plugins to our marketplace directly from GitHub. Get the reputation you deserve.</p>
+                        <p className="font-anek-latin font-bold uppercase">Sell your own plugins.</p>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Security first, always</h3>
-                        <p className="font-anek-latin">Your data, profiles and accounts stay safe. [NAME] uses good cybersecurity practices (2fa, db encryption, SSL encrypted communications...) and protects your personal info.</p>
-                        <p className="font-anek-latin font-bold uppercase">Start Securely</p>
+                        <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Institutional Grade Security</h3>
+                        <p className="font-anek-latin">Your data, profiles and accounts stay safe. WuAI uses production grade security (2fa, db encryption, SSL encrypted communications...) and protects your personal info.</p>
+                        <p className="font-anek-latin font-bold uppercase">Your keys and configurations are encrypted in secured systems.</p>
                     </div>
                     <div className="flex flex-col gap-2">
                         <h3 className="font-space font-bold text-xl text-primary-500 uppercase">Marketplace and extensions</h3>
                         <p className="font-anek-latin">Extend agent capabilities through integrated extensions and services. Add skills, connect external sources, and compose behaviors without modifying the agent core.</p>
-                        <p className="font-anek-latin font-bold uppercase">Full access to the whole agentic ecosystem in one place</p>
+                        <p className="font-anek-latin font-bold uppercase">Full access to the whole agentic ecosystem in one place.</p>
                     </div>
                 </div>
             </div>

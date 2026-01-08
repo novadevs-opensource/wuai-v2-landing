@@ -4,15 +4,15 @@ export default function FAQ() {
     const questions: AccordionItem[] = [
         {
             title: 'Do I need to know how to code?',
-            content: <p>Not necessarily. You can create agents without code, and extend them when needed using APIs, webhooks, or SDKs.</p>
+            content: <p>You only need to provide your API keys/credentials and configure your agent's behavior through our dashboard.</p>
         },
         {
             title: 'Can I run multiple agents at the same time?',
-            content: <p>Yes. Each agent runs as an independent instance with isolated, dedicated resources.</p>
+            content: <p>Yes. Each agent runs as an independent instance with isolated, dedicated resources. If you want you can also mix different frameworks (like Eliza and OpenAI) simultaneously in one dashboard.</p>
         },
         {
-            title: 'Can I monetize my agents?',
-            content: <p>Yes. The platform includes mechanisms to expose agents as services and manage access and consumption.</p>
+            title: 'Can I choose where my agent runs?',
+            content: <p>Absolutely. You can deploy agents on our high-performance cloud infrastructure (selecting the specific machine resources to optimize costs) or run them on your local machine paying for the exportation.</p>
         },
     ]
     return (

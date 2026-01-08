@@ -6,8 +6,9 @@ export default function Footer() {
         <section className="p-6 bg-black">
             <div className="container mx-auto text-white pt-24 pb-12">
                 <div className="md:w-1/2">
-                    <h3 className="font-space text-4xl mb-4">Lorem ipsum dolor</h3>
-                    <p className="font-anek-latin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit dolores minima sapiente molestiae molestias quae, voluptas consequatur similique recusandae aut, sed officia rerum, assumenda saepe earum necessitatibus quasi ab adipisci.</p>
+                    <h3 className="font-space text-4xl mb-4">Your agentic infrastructure layer</h3>
+                    <p className="font-anek-latin">All your agents unifiead, production-ready, without CLI. All executed under a unified user-friendly dashboard.</p>
+                    <p className="font-anek-latin">The Vercel/AWS console for AI Agents.</p>
                     <div className="mt-12">
                         <a className="font-anek-latin uppercase flex flex-row items-center gap-4 hover:opacity-50 hover:underline" href="#">
                             <span>Contact us</span>

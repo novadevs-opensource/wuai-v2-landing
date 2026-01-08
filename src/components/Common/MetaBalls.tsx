@@ -93,13 +93,26 @@ export default function Metaballs() {
             background: `linear-gradient(to bottom right, rgba(${color1}, ${config.opacity}), rgba(${color2}, ${config.opacity}))`,
             // REMOVED transition to make transitionDistance work properly
             // The transition was smoothing the changes regardless of the distance value
+            // 
+            // 
         };
     };
     
     return (
         <div 
             ref={metaballsRef}
-            className="absolute lg:right-0 left-[50%] lg:-top-10 top-[35%] lg:w-[600px] lg:h-[600px] h-[150px] w-[150px] pointer-events-none"
+            className="
+                absolute
+                lg:right-[15%] lg:top-[35%] 
+                xl:right-[5%] xl:top-[15%]
+                -right-[45%] top-[45%] 
+
+                lg:w-[200px] lg:h-[200px] 
+                xl:w-[400px] xl:h-[400px]
+                h-[100%] w-[100%] 
+                
+                pointer-events-none
+            "
         >
             {/* SVG Filter for Gooey Effect */}
             <svg className="absolute w-0 h-0">
