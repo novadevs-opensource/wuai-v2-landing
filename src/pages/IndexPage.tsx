@@ -10,6 +10,7 @@ import Marquee from "../components/Separators/Marquee";
 import upload from "../assets/images/upload.png";
 import screenshot from "../assets/images/screenshot.png";
 import solana from "../assets/images/brands/solana.png";
+import PaletteBlock from "../components/Common/PaletteBlock";
 
 const IndexPage = () => {
     const data = {
@@ -202,6 +203,8 @@ const IndexPage = () => {
                 socialLinks={data.footer.socialLinks}
                 bottomLinks={data.footer.bottomLinks}
             />
+
+            <PaletteBlock/>
         </>
     );
 }
