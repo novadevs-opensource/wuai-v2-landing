@@ -8,8 +8,8 @@ import Jumbotron from "../components/MainBlocks/Jumbotron";
 import Pains from "../components/MainBlocks/Pains";
 import Marquee from "../components/Separators/Marquee";
 import upload from "../assets/images/upload.png";
-import screenshot from "../assets/images/screenshot.png";
 import solana from "../assets/images/brands/solana.png";
+import mainLogo from '../assets/images/wuai-logo-white.svg'
 import PaletteBlock from "../components/Common/PaletteBlock";
 
 const IndexPage = () => {
@@ -63,11 +63,11 @@ const IndexPage = () => {
             buttonHref: '#',
         },
         features: {
-            leftFeatures: [
+            features: [
                 {
-                    title: 'Multi-framework creation',
-                    descriptions: ['Create and manage agents built on widely used frameworks: OpenAI, LLaMA, ElizaOS, Ollama, Cohere.'],
-                    boldDescription: "All executed under a unified OS, with full access to each framework's whole plugin ecosystem.",
+                    title: 'Marketplace and extensions',
+                    descriptions: ['Extend agent capabilities through integrated extensions and services. Add skills, connect external sources, and compose behaviors without modifying the agent core.'],
+                    boldDescription: 'Full access to the whole agentic ecosystem in one place.',
                 },
                 {
                     title: 'Resource Allocation Optimize your costs',
@@ -82,25 +82,18 @@ const IndexPage = () => {
                     ],
                     boldDescription: 'Direct integration with applications, products, or existing systems.',
                 },
-            ],
-            screenshotImage: screenshot,
-            rightFeatures: [
-                {
-                    title: 'Your efforts are rewarded',
-                    descriptions: ['Publish your own plugins to our marketplace directly from GitHub. Get the reputation you deserve.'],
-                    boldDescription: 'Sell your own plugins.',
-                },
                 {
                     title: 'Institutional Grade Security',
                     descriptions: ['Your data, profiles and accounts stay safe. WuAI uses production grade security (2fa, db encryption, SSL encrypted communications...) and protects your personal info.'],
                     boldDescription: 'Your keys and configurations are encrypted in secured systems.',
                 },
                 {
-                    title: 'Marketplace and extensions',
-                    descriptions: ['Extend agent capabilities through integrated extensions and services. Add skills, connect external sources, and compose behaviors without modifying the agent core.'],
-                    boldDescription: 'Full access to the whole agentic ecosystem in one place.',
+                    title: 'Multi-framework creation',
+                    descriptions: ['Create and manage agents built on widely used frameworks: OpenAI, LLaMA, ElizaOS, Ollama, Cohere.'],
+                    boldDescription: "All executed under a unified OS, with full access to each framework's whole plugin ecosystem.",
                 },
             ],
+            screenshotImage: mainLogo,
             brandLogos: [solana, solana, solana, solana, solana],
         },
         marquee: {
@@ -174,14 +167,14 @@ const IndexPage = () => {
                 buttonHref={data.claimBlock.buttonHref}
             />
 
+            <Marquee text={data.marquee.text}/>
+
             <Features
-                leftFeatures={data.features.leftFeatures}
+                features={data.features.features}
                 screenshotImage={data.features.screenshotImage}
-                rightFeatures={data.features.rightFeatures}
                 brandLogos={data.features.brandLogos}
             />
             
-            <Marquee text={data.marquee.text}/>
             
             <FAQ
                 title={data.faq.title}
