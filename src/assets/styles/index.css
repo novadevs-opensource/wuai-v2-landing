@@ -6,6 +6,39 @@
     user-select: none;
 }
 
+/* Bordered container: slightly narrower than viewport on small screens
+   so the side borders and white margins are visible. */
+@layer utilities {
+  .bordered-container {
+    max-width: calc(100% - 2.5rem);
+  }
+  @media (min-width: 640px) {
+    .bordered-container {
+      max-width: calc(100% - 4rem);
+    }
+  }
+  @media (min-width: 768px) {
+    .bordered-container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .bordered-container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .bordered-container {
+      max-width: 1280px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .bordered-container {
+      max-width: 1536px;
+    }
+  }
+}
+
 /* Grain / noise overlay effect.
    clip-path on the parent clips the fixed pseudo-element to the
    container's visible box — no overflow issues AND no scroll jank. */

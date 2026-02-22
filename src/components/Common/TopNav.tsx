@@ -15,8 +15,8 @@ function classNames(...classes: string[]) {
 
 export default function TopNav({ navigation, buttonText, buttonHref }: TopNavProps) {
   return (
-    <Disclosure as="nav" className="md:border border-gray-400 md:border-b-1 md:border-t-0 md:border-l-0 md:border-r-0">
-      <div className="mx-auto px-2 py-2 w-full container sm:px-6 lg:px-12 md:border border-gray-400 md:border-t-0 md:border-b-0">
+    <Disclosure as="nav" className="border border-gray-400 border-b-1 border-t-0 border-l-0 border-r-0">
+      <div className="mx-auto px-2 py-2 w-full bordered-container sm:px-6 lg:px-12 border border-gray-400 border-t-0 border-b-0">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-between">
             {/* Logo */}

@@ -51,7 +51,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ title, ctas, mainClaim, buttonTex
     }, [displayedText, isDeleting, currentCtaIndex, ctas]);
     
     return (
-        <section className="border border-gray-400 border-t-0 border-b-0 container mx-auto grain">
+        <section className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto grain">
             <div className="lg:pt-48 lg:px-12 px-6 py-12 flex flex-col relative overflow-hidden">
                 <div className="w-fit flex flex-row relative lg:mb-6 mb-1">
                     <h1 className="lg:text-2xl xl:text-3xl text-md font-bold">{title}</h1>
@@ -70,7 +70,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ title, ctas, mainClaim, buttonTex
                         )}
                     </h2>
                 </div>
-                <div className="my-14">
+                <div className="mt-14">
                     <Button variant="dark" href={buttonHref}>{buttonText}</Button>
                 </div>
                 {/* <Metaballs/> */}

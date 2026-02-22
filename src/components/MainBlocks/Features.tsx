@@ -29,7 +29,7 @@ export default function Features({ leftFeatures, screenshotImage, rightFeatures,
     );
 
     return (
-        <section className="border border-gray-400 border-t-0 border-b-0 container mx-auto pt-16 pb-36 px-6 grain">
+        <section className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto pt-16 pb-36 px-6 grain">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
                 {/* desktop hidden */}
                 {renderFeatureColumn(leftFeatures)}
