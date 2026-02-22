@@ -6,6 +6,41 @@
     user-select: none;
 }
 
+/* Grain / noise overlay effect.
+   clip-path on the parent clips the fixed pseudo-element to the
+   container's visible box — no overflow issues AND no scroll jank. */
+.grain {
+  position: relative;
+  clip-path: inset(0);
+  isolation: isolate;
+}
+
+.grain:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+  content: "";
+  position: fixed;
+  inset: -110% -100%;
+  width: 300%;
+  height: 300%;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(5%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(5%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   position: unset;
   margin-top: 2em !important;

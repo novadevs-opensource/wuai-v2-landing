@@ -1,6 +1,5 @@
 import React, { useState, useEffect, ReactNode } from "react";
 import { Button } from "../Common/Button";
-import Metaballs from "../Common/MetaBalls";
 
 export interface JumbotronProps {
     title: string | ReactNode;
@@ -52,18 +51,18 @@ const Jumbotron: React.FC<JumbotronProps> = ({ title, ctas, mainClaim, buttonTex
     }, [displayedText, isDeleting, currentCtaIndex, ctas]);
     
     return (
-        <section className="border border-gray-400 border-t-0 border-b-0 container mx-auto">
+        <section className="border border-gray-400 border-t-0 border-b-0 container mx-auto grain">
             <div className="lg:pt-48 lg:px-12 px-6 py-12 flex flex-col relative overflow-hidden">
                 <div className="w-fit flex flex-row relative lg:mb-6 mb-1">
                     <h1 className="lg:text-2xl xl:text-3xl text-md font-bold">{title}</h1>
                 </div>
                 <div className="">
-                    <h2 className="mb-8 lg:text-4xl xl:text-6xl text-[18px] font-bold font-space">
-                        <span>{mainClaim}</span>
+                    <h2 className="font-bold">
+                        <span className="mr-2 mb-8 text-3xl lg:text-4xl xl:text-6xl">{mainClaim}</span>
                         {ctas.length > 0 && (
                             <>
-                                <span> </span>
-                                <span className="text-primary-500">
+                                <br className="sm:hidden"></br>
+                                <span className="mb-8 text-3xl lg:text-4xl xl:text-6xl text-primary-500">
                                     {displayedText}
                                     <span className="animate-pulse">|</span>
                                 </span>
@@ -71,10 +70,10 @@ const Jumbotron: React.FC<JumbotronProps> = ({ title, ctas, mainClaim, buttonTex
                         )}
                     </h2>
                 </div>
-                <div className="mt-8 mb-12">
+                <div className="my-14">
                     <Button variant="dark" href={buttonHref}>{buttonText}</Button>
                 </div>
-                <Metaballs/>
+                {/* <Metaballs/> */}
             </div>
         </section>
     );
