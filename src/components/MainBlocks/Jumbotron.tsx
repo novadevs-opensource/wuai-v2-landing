@@ -6,9 +6,11 @@ export interface JumbotronProps {
     title: string | ReactNode;
     mainClaim: string | ReactNode;
     ctas: string[];
+    buttonText: string;
+    buttonHref: string;
 }
 
-const Jumbotron: React.FC<JumbotronProps> = ({ title, ctas, mainClaim }) => {
+const Jumbotron: React.FC<JumbotronProps> = ({ title, ctas, mainClaim, buttonText, buttonHref }) => {
     const [currentCtaIndex, setCurrentCtaIndex] = useState(0);
     const [displayedText, setDisplayedText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
@@ -70,7 +72,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ title, ctas, mainClaim }) => {
                     </h2>
                 </div>
                 <div className="mt-8 mb-12">
-                    <Button variant="dark" href="#">Launch Console</Button>
+                    <Button variant="dark" href={buttonHref}>{buttonText}</Button>
                 </div>
                 <Metaballs/>
             </div>

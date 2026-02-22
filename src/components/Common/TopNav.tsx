@@ -3,16 +3,17 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import mainLogo from '../../assets/images/wuai-logo-purple.svg'
 import { Button } from './Button'
 
-const navigation = [
-  { name: 'About', href: 'https://sample.gitbook.io/doc/1.-project-overview', current: false },
-  { name: 'Whitepaper', href: 'https://sample.gitbook.io/doc/4.-tokenomics', current: false },
-]
+export interface TopNavProps {
+  navigation: { name: string; href: string; current?: boolean }[];
+  buttonText: string;
+  buttonHref: string;
+}
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function TopNav() {
+export default function TopNav({ navigation, buttonText, buttonHref }: TopNavProps) {
   return (
     <Disclosure as="nav" className="md:border border-gray-400 md:border-b-1 md:border-t-0 md:border-l-0 md:border-r-0">
       <div className="mx-auto px-2 py-4 w-full container sm:px-6 lg:px-12 md:border border-gray-400 md:border-t-0 md:border-b-0">
@@ -42,7 +43,7 @@ export default function TopNav() {
                     {item.name}
                   </a>
                 ))}
-                <Button variant="dark" href="#">Launch Console</Button>
+                <Button variant="dark" href={buttonHref}>{buttonText}</Button>
               </div>
             </div>
           </div>
