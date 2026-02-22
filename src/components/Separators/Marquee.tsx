@@ -69,7 +69,7 @@ const Marquee: React.FC<MarqueeProps> = ({
       
       // Crear el elemento de texto con espaciado
       const span = document.createElement('span');
-      span.className = 'inline-block font-bold font-anon';
+      span.className = 'inline-block font-bold font-space';
       span.textContent = text;
       
       const spacer = document.createElement('span');

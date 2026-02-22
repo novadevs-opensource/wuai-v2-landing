@@ -122,7 +122,7 @@ const IndexPage = () => {
             buttonHref: '#',
         },
         footer: {
-            title: 'Your agentic infrastructure layer',
+            title: <>Your agentic<br/>infrastructure layer</>,
             description: 'All your agents unifiead, production-ready, without CLI. All executed under a unified user-friendly dashboard.',
             subtitle: 'The Vercel/AWS console for AI Agents.',
             contactText: 'Contact us',

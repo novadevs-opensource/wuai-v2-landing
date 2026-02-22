@@ -19,7 +19,7 @@ export default function Features({ features, screenshotImage, brandLogos }: Feat
             {/* ── Hero row: feature principal + screenshot ── */}
             <div className="grid grid-cols-1 lg:grid-cols-5 border-b border-gray-300">
                 <div className="lg:col-span-2 flex items-center justify-center md:p-12 px-6 py-12 lg:border-r border-gray-300 bg-primary-500">
-                    <span className="font-space font-semibold text-4xl md:text-6xl uppercase tracking-wider text-white select-none !font-anek-latin break-all">
+                    <span className="font-anek-latin font-semibold text-4xl md:text-6xl uppercase tracking-wider text-white select-none break-all">
                         [Features]
                     </span>
                 </div>
