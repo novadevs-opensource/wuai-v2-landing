@@ -10,7 +10,7 @@
    so the side borders and white margins are visible. */
 @layer utilities {
   .bordered-container {
-    max-width: calc(100% - 2.5rem);
+    max-width: calc(100% - 2rem);
   }
   @media (min-width: 640px) {
     .bordered-container {
