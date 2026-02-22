@@ -14,13 +14,13 @@ export interface FeaturesProps {
 
 export default function Features({ features, screenshotImage, brandLogos }: FeaturesProps) {
     return (
-        <section className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto grain">
+        <section className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto grain overflow-hidden">
 
             {/* ── Hero row: feature principal + screenshot ── */}
             <div className="grid grid-cols-1 lg:grid-cols-5 border-b border-gray-300">
-                <div className="lg:col-span-2 flex items-center justify-center md:p-12 px-6 py-12 lg:border-r border-gray-300 bg-white">
-                    <span className="font-space font-bold text-6xl lg:text-8xl uppercase tracking-wider text-primary-500 select-none">
-                        Features
+                <div className="lg:col-span-2 flex items-center justify-center md:p-12 px-6 py-12 lg:border-r border-gray-300 bg-primary-500">
+                    <span className="font-space font-semibold text-4xl md:text-6xl uppercase tracking-wider text-white select-none !font-anek-latin break-all">
+                        [Features]
                     </span>
                 </div>
                 <div className="lg:col-span-3 md:p-12 px-6 py-12 flex flex-col justify-center">
@@ -60,7 +60,7 @@ export default function Features({ features, screenshotImage, brandLogos }: Feat
                         {features[4].boldDescription}
                     </p>
                 </div>
-                <div className="lg:w-2/5 flex items-center justify-center md:p-12 px-6 py-12 bg-primary-500">
+                <div className="lg:w-2/5 flex items-center justify-center md:p-12 px-6 py-12 bg-white">
                     <img src={screenshotImage} alt="Product logo" className="h-16 lg:h-20 object-contain" />
                 </div>
             </div>

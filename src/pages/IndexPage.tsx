@@ -7,10 +7,10 @@ import Footer from "../components/MainBlocks/Footer";
 import Jumbotron from "../components/MainBlocks/Jumbotron";
 import Pains from "../components/MainBlocks/Pains";
 import Marquee from "../components/Separators/Marquee";
-import upload from "../assets/images/upload.png";
 import solana from "../assets/images/brands/solana.png";
-import mainLogo from '../assets/images/wuai-logo-white.svg'
+import mainLogo from '../assets/images/wuai-logo-purple.svg'
 import PaletteBlock from "../components/Common/PaletteBlock";
+import { HiOutlineCubeTransparent, HiOutlineRocketLaunch, HiOutlineCodeBracketSquare } from "react-icons/hi2";
 
 const IndexPage = () => {
     const data = {
@@ -41,17 +41,17 @@ const IndexPage = () => {
             description: 'The ecosystem is full of agents that work in demos, but fail when exposed to real-world production constraints. Setup, build and deploy your agents in a production-ready environment.',
             items: [
                 {
-                    image: upload,
+                    icon: <HiOutlineCubeTransparent />,
                     title: 'Unified Ecosystem',
                     description: 'Stop juggling multiple subscriptions and fragmented tools. Manage ElizaOS, OpenAI, Claude, and more from a single dashboard. One platform, infinite frameworks.',
                 },
                 {
-                    image: upload,
+                    icon: <HiOutlineRocketLaunch />,
                     title: 'Zero-Ops Deployment',
                     description: 'No coding skills or DevOps team required. Simply input your API keys and tokens. We handle the servers, security, and setup automatically. A completely no-code experience.',
                 },
                 {
-                    image: upload,
+                    icon: <HiOutlineCodeBracketSquare />,
                     title: 'Open-Source friendly and monetization',
                     description: 'Publish your own plugins to our marketplace directly from GitHub. Once our team verifies them, start monetizing your creations with built-in usage metering and access plans.',
                 },
@@ -174,17 +174,16 @@ const IndexPage = () => {
                 screenshotImage={data.features.screenshotImage}
                 brandLogos={data.features.brandLogos}
             />
-            
-            
-            <FAQ
-                title={data.faq.title}
-                questions={data.faq.questions}
-            />
 
             <ClaimBlueBlock
                 title={data.claimBlueBlock.title}
                 buttonText={data.claimBlueBlock.buttonText}
                 buttonHref={data.claimBlueBlock.buttonHref}
+            />
+            
+            <FAQ
+                title={data.faq.title}
+                questions={data.faq.questions}
             />
 
             <Footer
