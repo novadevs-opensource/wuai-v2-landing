@@ -1,6 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import mainLogo from '../../assets/images/wuai-logo-purple.svg'
+import mainLogo from '../../assets/images/logo/guayaba_horizontal_blue.svg'
 import { Button } from './Button'
 
 export interface TopNavProps {

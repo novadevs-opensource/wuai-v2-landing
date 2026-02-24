@@ -1,6 +1,6 @@
 import { FaPlay, FaTelegram, FaXTwitter } from "react-icons/fa6";
-import logoWhite from "../../assets/images/wuai-logo-white.svg"
-import logoBlack from "../../assets/images/wuai-logo-purple.svg"
+import logoWhite from "../../assets/images/logo/guayaba_horizontal_white.svg"
+import logoBlack from "../../assets/images/logo/guayaba_horizontal_blue.svg"
 import React, { ReactNode } from "react";
 
 const socialIcons: Record<string, React.ElementType> = {

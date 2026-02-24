@@ -8,7 +8,7 @@ import Jumbotron from "../components/MainBlocks/Jumbotron";
 import Pains from "../components/MainBlocks/Pains";
 import Marquee from "../components/Separators/Marquee";
 import solana from "../assets/images/brands/solana.png";
-import mainLogo from '../assets/images/wuai-logo-purple.svg'
+import mainLogo from '../assets/images/logo/guayaba_horizontal_blue.svg'
 import PaletteBlock from "../components/Common/PaletteBlock";
 import { HiOutlineCubeTransparent, HiOutlineRocketLaunch, HiOutlineCodeBracketSquare } from "react-icons/hi2";
 
