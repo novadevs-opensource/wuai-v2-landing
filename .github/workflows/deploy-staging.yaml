@@ -103,7 +103,7 @@ jobs:
           webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
           webhook-type: incoming-webhook
           payload: |
-            text: "Release Landing Page to ${ENV_TO_DEPLOY} - Status: ${{ job.status }}"
+            text: "Release Landing Page to ${{ env.ENV_TO_DEPLOY }} - Status: ${{ job.status }}"
             blocks:
               - type: "section"
                 text:
