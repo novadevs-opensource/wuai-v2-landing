@@ -8,7 +8,7 @@ import Jumbotron from "../components/MainBlocks/Jumbotron";
 import Pains from "../components/MainBlocks/Pains";
 import Marquee from "../components/Separators/Marquee";
 import solana from "../assets/images/brands/solana.png";
-import mainLogo from '../assets/images/logo/guayaba_horizontal_blue.svg'
+import mainLogo from '../assets/images/logo/guayaba_horizontal_black.svg'
 import PaletteBlock from "../components/Common/PaletteBlock";
 import { HiOutlineCubeTransparent, HiOutlineRocketLaunch, HiOutlineCodeBracketSquare } from "react-icons/hi2";
 
@@ -52,8 +52,8 @@ const IndexPage = () => {
                 },
                 {
                     icon: <HiOutlineCodeBracketSquare />,
-                    title: 'Open-Source friendly and monetization',
-                    description: 'Publish your own plugins to our marketplace directly from GitHub. Once our team verifies them, start monetizing your creations with built-in usage metering and access plans.',
+                    title: 'Curated & Open-Source Marketplace',
+                    description: 'Every skill in our marketplace is reviewed and verified by our team before publication, ensuring security, reliability, and zero risk of malware. Publish your own plugins from GitHub and start monetizing with built-in usage metering.',
                 },
             ],
         },
@@ -65,13 +65,13 @@ const IndexPage = () => {
         features: {
             features: [
                 {
-                    title: 'Marketplace and extensions',
-                    descriptions: ['Extend agent capabilities through integrated extensions and services. Add skills, connect external sources, and compose behaviors without modifying the agent core.'],
-                    boldDescription: 'Full access to the whole agentic ecosystem in one place.',
+                    title: 'Curated Skills Marketplace',
+                    descriptions: ['Extend agent capabilities through a marketplace where every skill is reviewed and verified by our team. Add skills with confidence, no risk of malware or unreliable integrations. Connect external sources and compose behaviors without modifying the agent core.'],
+                    boldDescription: 'A secure, curated ecosystem you can trust. All in one place.',
                 },
                 {
                     title: 'Resource Allocation Optimize your costs',
-                    descriptions: ['Choose the exact hardware (CPU/GPU/RAM) for each agent in the cloud, or run lightweight agents locally.'],
+                    descriptions: ['Choose the exact hardware (CPU/GPU/RAM/Storage) for each agent in the cloud, or run lightweight agents locally.'],
                     boldDescription: 'Pay only for the resources you actually use.',
                 },
                 {
@@ -84,12 +84,12 @@ const IndexPage = () => {
                 },
                 {
                     title: 'Institutional Grade Security',
-                    descriptions: ['Your data, profiles and accounts stay safe. WuAI uses production grade security (2fa, db encryption, SSL encrypted communications...) and protects your personal info.'],
+                    descriptions: ['Your data, profiles and accounts stay safe. Guayaba uses production grade security (2fa, db encryption, SSL encrypted communications...) and protects your personal info.'],
                     boldDescription: 'Your keys and configurations are encrypted in secured systems.',
                 },
                 {
                     title: 'Multi-framework creation',
-                    descriptions: ['Create and manage agents built on widely used frameworks: OpenAI, LLaMA, ElizaOS, Ollama, Cohere.'],
+                    descriptions: ['Create and manage agents built on widely used frameworks: OpenAI, Anthropic, OpenClaw, Ollama, Cohere.'],
                     boldDescription: "All executed under a unified OS, with full access to each framework's whole plugin ecosystem.",
                 },
             ],
