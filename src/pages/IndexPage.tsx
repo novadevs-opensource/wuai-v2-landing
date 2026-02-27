@@ -18,6 +18,10 @@ const IndexPage = () => {
     const data = {
         topNav: {
             navigation: [
+                { name: 'Features', href: '#features' },
+                { name: 'Identity', href: '#identity' },
+                { name: 'Payments', href: '#payments' },
+                { name: 'FAQ', href: '#faq' },
                 { name: 'About', href: 'https://sample.gitbook.io/doc/1.-project-overview' },
                 { name: 'Whitepaper', href: 'https://sample.gitbook.io/doc/4.-tokenomics' },
             ],

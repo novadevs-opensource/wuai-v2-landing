@@ -14,7 +14,7 @@ export interface FeaturesProps {
 
 export default function Features({ features, screenshotImage, brandLogos }: FeaturesProps) {
     return (
-        <section className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto grain overflow-hidden">
+        <section id="features" className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto grain overflow-hidden scroll-mt-16">
 
             {/* ── Hero row: feature principal + screenshot ── */}
             <div className="grid grid-cols-1 lg:grid-cols-5 border-b border-gray-400">

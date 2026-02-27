@@ -32,7 +32,7 @@ export default function AgentIdentity({
     }, [visibleLines, terminalLines.length]);
 
     return (
-        <section className="bg-[#000000] text-white overflow-hidden">
+        <section id="identity" className="bg-[#000000] text-white overflow-hidden scroll-mt-16">
             <div className="max-w-7xl mx-auto md:px-12 px-6 py-20 md:py-28">
 
                 {/* ── Header ── */}

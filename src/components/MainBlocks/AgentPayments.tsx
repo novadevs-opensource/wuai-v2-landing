@@ -57,7 +57,7 @@ export default function AgentPayments({
     }, [flowNodes.length]);
 
     return (
-        <section className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto grain overflow-hidden">
+        <section id="payments" className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto grain overflow-hidden scroll-mt-16">
 
             {/* ── Header row ── */}
             <div className="grid grid-cols-1 lg:grid-cols-5 border-b border-gray-400">
