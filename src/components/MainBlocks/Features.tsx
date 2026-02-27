@@ -19,7 +19,7 @@ export default function Features({ features, screenshotImage, brandLogos }: Feat
             {/* ── Hero row: feature principal + screenshot ── */}
             <div className="grid grid-cols-1 lg:grid-cols-5 border-b border-gray-400">
                 <div className="lg:col-span-2 flex items-center justify-center md:p-12 px-6 py-12 lg:border-r border-gray-400 bg-primary-500">
-                    <span className="font-anek-latin font-semibold text-4xl md:text-6xl uppercase tracking-wider text-white select-none break-all">
+                    <span className="font-anek-latin font-semibold text-4xl uppercase tracking-wider text-white select-none break-all">
                         <span className='font-light'>[</span>Features<span className='font-light'>]</span>
                     </span>
                 </div>
@@ -64,6 +64,23 @@ export default function Features({ features, screenshotImage, brandLogos }: Feat
                     <img src={screenshotImage} alt="Product logo" className="h-16 lg:h-20 object-contain" />
                 </div>
             </div>
+
+            {/* ── Extra 2-col features (Identity & Payments) ── */}
+            {features.length > 5 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 border-b border-gray-400 divide-y md:divide-y-0 md:divide-x divide-gray-400">
+                    {features.slice(5, 7).map((feature, i) => (
+                        <div key={i} className="md:py-14 md:px-8 px-6 py-10">
+                            <h3 className="font-space font-bold text-lg lg:text-xl uppercase tracking-wide mb-4">{feature.title}</h3>
+                            {feature.descriptions.map((desc, j) => (
+                                <p key={j} className="font-anek-latin text-sm text-black-light leading-relaxed mb-2">{desc}</p>
+                            ))}
+                            <p className="font-anek-latin font-bold text-xs uppercase tracking-wider text-primary-500 mt-5">
+                                {feature.boldDescription}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            )}
 
             {/* ── Brand logos ── */}
             <div className="md:px-12 px-6 py-14 lg:py-20 flex items-center justify-between gap-8">
