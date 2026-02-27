@@ -101,7 +101,7 @@ export default function AgentPayments({
                 {/* Flow visualization */}
                 <div className="bg-[#000000] text-white lg:col-span-3 lg:border-r border-b lg:border-b-0 border-gray-400 p-6 md:p-8 overflow-hidden"
                      style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px)', backgroundSize: '24px 24px' }}>
-                    <p className="font-anon text-sm uppercase tracking-widest text-white mb-8">
+                    <p className="text-sm uppercase tracking-widest text-white mb-8">
                         Transaction Flow
                     </p>
 
@@ -256,7 +256,7 @@ export default function AgentPayments({
                         i >= 1 ? 'md:border-l' : ''
                     }`}>
                         <p className="font-space font-bold text-2xl md:text-3xl text-primary-500">{stat.value}</p>
-                        <p className="font-anek-latin text-xs text-black-light/40 uppercase tracking-wider mt-1">{stat.label}</p>
+                        <p className="font-anek-latin text-xs text-black uppercase tracking-wider mt-1">{stat.label}</p>
                     </div>
                 ))}
             </div>

@@ -78,7 +78,7 @@ export default function AgentIdentity({
                     <div className="flex flex-col divide-y divide-white/50">
                         {features.map((item) => (
                             <div key={item.num} className="p-6 md:p-8 flex items-start gap-5 group flex-1">
-                                <span className="font-anon text-xs text-white/20 tracking-widest mt-1 shrink-0">
+                                <span className="font-anon text-xs text-white/40 tracking-widest mt-1 shrink-0">
                                     {item.num}
                                 </span>
                                 <div>
