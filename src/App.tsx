@@ -7,6 +7,7 @@ const App = () => {
     const lenis = new Lenis({
       lerp: 0.08,
       smoothWheel: true,
+      anchors: true,
     });
 
     function raf(time: number) {
