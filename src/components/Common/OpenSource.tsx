@@ -14,7 +14,7 @@ export default function OpenSource() {
                                 <p className='font-afacad text-lg'>Create, customize and earn rewards without writing any code</p>
                             </div>
                             <div>
-                                <Button variant='dark' href='#' /*href='https://github.com/sampleSOL'*/ target="_blank" onClick={() => console.log('click')}>Launch</Button>
+                                <Button variant='dark' href='https://app.guayaba.run' /*href='https://github.com/sampleSOL'*/ target="_blank" onClick={() => console.log('click')}>Launch</Button>
                             </div>
                         </div>
                         <div className="p-10 bg-gray-200 border rounded-lg h-full flex flex-col justify-center">
@@ -29,9 +29,9 @@ export default function OpenSource() {
                             <h3 className='md:text-4xl text-xl md:font-light font-bold font-anek-latin'>Discover how to create an SAMPLE</h3>
                             <div>
                                 <p className='text-lg my-4 font-afacad'>
-                                Dive deeper into the mechanisms, rewards, and potential of the sample ecosystem. Visit our GitBook for detailed documentation and tutorials.
+                                Dive deeper into the mechanisms, rewards, and potential of the sample ecosystem. Visit our docs for detailed documentation and tutorials.
                                 </p>
-                                <Button variant='dark' href='https://sample.gitbook.io/doc' onClick={() => console.log('click')}>Read Gitbook</Button>
+                                <Button variant='dark' href='https://docs.guayaba.run' onClick={() => console.log('click')}>Read Docs</Button>
                             </div>
                         </div>
                     </div>

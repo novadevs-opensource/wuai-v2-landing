@@ -28,11 +28,9 @@ const IndexPage = () => {
                 { name: 'Identity', href: '#identity' },
                 { name: 'Payments', href: '#payments' },
                 { name: 'FAQ', href: '#faq' },
-                { name: 'About', href: 'https://sample.gitbook.io/doc/1.-project-overview' },
-                { name: 'Whitepaper', href: 'https://sample.gitbook.io/doc/4.-tokenomics' },
             ],
             buttonText: 'Launch Console',
-            buttonHref: '#',
+            buttonHref: 'https://app.guayaba.run',
         },
         jumbotron: {
             title: 'Your agentic infrastructure layer.',
@@ -43,7 +41,7 @@ const IndexPage = () => {
                 'production-ready',
             ],
             buttonText: 'Launch Console',
-            buttonHref: '#',
+            buttonHref: 'https://app.guayaba.run',
         },
         pains: {
             titles: [
@@ -90,7 +88,7 @@ const IndexPage = () => {
         claimBlock: {
             title: 'Designed to move from experimentation to production with just a few clicks.',
             buttonText: 'Launch Console',
-            buttonHref: '#',
+            buttonHref: 'https://app.guayaba.run',
         },
         features: {
             features: [
@@ -231,7 +229,7 @@ const IndexPage = () => {
         claimBlueBlock: {
             title: 'The VERCEL/AWS Console for AI agents.',
             buttonText: 'Launch Console',
-            buttonHref: '#',
+            buttonHref: 'https://app.guayaba.run',
         },
         marquee2: {
             text: 'DEPLOY · SCALE · MONITOR · REPEAT',
@@ -241,15 +239,14 @@ const IndexPage = () => {
             description: 'All your agents unified, production-ready, without CLI. All executed under a unified user-friendly dashboard.',
             subtitle: 'The Vercel/AWS console for AI Agents.',
             contactText: 'Contact us',
-            contactHref: '#',
+            contactHref: 'mailto:david@guayaba.run',
             socialLinks: [
                 { type: 'telegram', href: '#' },
-                { type: 'twitter', href: '#' },
+                { type: 'twitter', href: 'https://x.com/Guayabadotrun' },
             ],
             bottomLinks: [
-                { name: 'Whitepaper', href: '#' },
-                { name: 'Documentation', href: '#' },
-                { name: 'Support', href: '#' },
+                { name: 'Documentation', href: 'https://docs.guayaba.run' },
+                { name: 'Support', href: 'mailto:david@guayaba.run' },
             ],
         },
     };
