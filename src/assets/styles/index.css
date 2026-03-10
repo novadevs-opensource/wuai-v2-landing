@@ -90,6 +90,11 @@ html.lenis, html.lenis body {
   90% { transform:translate(-10%, 10%) }
 }
 
+/* Border color that works better with grain texture */
+.border-grain-safe {
+  border-color: #7a121261 !important;
+}
+
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   position: unset;
   margin-top: 2em !important;
@@ -221,4 +226,32 @@ html.lenis, html.lenis body {
 } 
 .animate-float-orbit {
   animation: float-orbit 25s linear infinite;
+}
+
+/* Pattern animation for privacy block */
+@keyframes pattern-slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 10px;
+  }
+}
+
+.animate-pattern-slide {
+  animation: pattern-slide 0.8s linear infinite;
+}
+
+/* Horizontal pattern animation for blue blocks */
+@keyframes pattern-slide-horizontal {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10px 0;
+  }
+}
+
+.animate-pattern-slide-horizontal {
+  animation: pattern-slide-horizontal 0.8s linear infinite;
 }

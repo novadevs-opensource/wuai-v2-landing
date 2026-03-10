@@ -8,8 +8,20 @@ export interface PainsProps {
 
 export default function Pains({ titles, description, items }: PainsProps) {
     return (
-        <section className="bg-primary-500 bg-[url('../../assets/images/square-network.png')] bg-repeat bg-contain bg-fixed text-white overflow-hidden">
-            <div className="max-w-7xl mx-auto md:px-12 px-6 py-20 md:py-28">
+        <section className="bg-primary-500 text-white overflow-hidden relative border-t border-b border-black">
+            {/* Animated grid pattern background */}
+            <div 
+                className="absolute inset-0 opacity-[0.12] animate-pattern-slide-horizontal"
+                style={{
+                    backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 2.5px, white 2.5px, white 5px),
+                                     repeating-linear-gradient(90deg, transparent, transparent 2.5px, white 2.5px, white 5px)`,
+                    backgroundSize: '10px 10px',
+                    backfaceVisibility: 'hidden',
+                    transform: 'translateZ(0)'
+                }}
+            ></div>
+            
+            <div className="max-w-7xl mx-auto md:px-12 px-6 py-20 md:py-28 relative z-10">
                 {/* Header */}
                 <div className="md:max-w-4xl">
                     {titles.map((t, i) => (
@@ -21,9 +33,9 @@ export default function Pains({ titles, description, items }: PainsProps) {
                 </div>
 
                 {/* Items grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 mt-16 lg:mt-20 border border-black bg-white">
+                <div className="grid grid-cols-1 md:grid-cols-3 mt-16 lg:mt-20 border border-gray-400 bg-white">
                     {items.map((item, i) => (
-                        <div key={i} className={`p-8 lg:p-10 ${i < items.length - 1 ? 'border-b md:border-b-0 md:border-r border-black' : ''}`}>
+                        <div key={i} className={`p-8 lg:p-10 ${i < items.length - 1 ? 'border-b md:border-b-0 md:border-r border-gray-400' : ''}`}>
                             <div className="text-3xl text-primary-500 mb-6">{item.icon}</div>
                             <h3 className="font-space font-bold uppercase tracking-wide text-sm lg:text-base mb-4 text-black">{item.title}</h3>
                             <p className="font-anek-latin text-sm lg:text-base text-black-light leading-relaxed">
@@ -33,6 +45,7 @@ export default function Pains({ titles, description, items }: PainsProps) {
                     ))}
                 </div>
             </div>
+            
         </section>
     )
 }

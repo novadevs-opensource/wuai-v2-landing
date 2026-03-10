@@ -8,8 +8,13 @@ import AgentPayments from "../components/MainBlocks/AgentPayments";
 import Footer from "../components/MainBlocks/Footer";
 import Jumbotron from "../components/MainBlocks/Jumbotron";
 import Pains from "../components/MainBlocks/Pains";
+import PrivacyClaim from "../components/MainBlocks/PrivacyClaim";
 import Marquee from "../components/Separators/Marquee";
-import solana from "../assets/images/brands/solana.png";
+import openclaw from "../assets/images/brands/openclaw.svg";
+import openai from "../assets/images/brands/openai.svg";
+import anthropic from "../assets/images/brands/anthropic.svg";
+import ollama from "../assets/images/brands/ollama.svg";
+import langchain from "../assets/images/brands/langchain.svg";
 import mainLogo from '../assets/images/logo/guayaba_horizontal_black.svg'
 import PaletteBlock from "../components/Common/PaletteBlock";
 import { HiOutlineCubeTransparent, HiOutlineRocketLaunch, HiOutlineCodeBracketSquare } from "react-icons/hi2";
@@ -21,6 +26,7 @@ const IndexPage = () => {
                 { name: 'Features', href: '#features' },
                 { name: 'Identity', href: '#identity' },
                 { name: 'Payments', href: '#payments' },
+                { name: 'Privacy', href: '#privacy' },
                 { name: 'FAQ', href: '#faq' },
                 { name: 'About', href: 'https://sample.gitbook.io/doc/1.-project-overview' },
                 { name: 'Whitepaper', href: 'https://sample.gitbook.io/doc/4.-tokenomics' },
@@ -63,6 +69,24 @@ const IndexPage = () => {
                 },
             ],
         },
+        privacyClaim: {
+            mainClaim: <>Private by Design</>,
+            subClaim: <>Generic models leak industry knowledge. Third-party APIs expose your data. Most AI platforms force you into their infrastructure, logging your prompts and training on your queries. Choose from thousands of specialized models on Hugging Face, or deploy your own proprietary model. Zero data egress. Full control. SOC2, HIPAA, and GDPR compliant by design.</>,
+            items: [
+                {
+                    title: 'Hugging Face Integration',
+                    description: 'Medical, legal, finance, code, multilingual—use models specifically trained for your industry. Browse, test, and deploy from 500K+ models in one click. No API keys, no third parties, no data leaks.',
+                },
+                {
+                    title: 'Upload Your Own Model',
+                    description: 'Trained an in-house model? Upload it directly. PyTorch, TensorFlow, ONNX, Safetensors. Your weights stay within your infrastructure. Your training data never leaves your environment.',
+                },
+                {
+                    title: 'Air-Gapped Inference',
+                    description: 'Models run in isolated environments. Prompts, responses, and model weights never touch external servers. Enterprise compliance, government-grade security, unrestricted intelligence.',
+                },
+            ],
+        },
         claimBlock: {
             title: 'Designed to move from experimentation to production with just a few clicks.',
             buttonText: 'Launch Console',
@@ -83,8 +107,7 @@ const IndexPage = () => {
                 {
                     title: 'Universal API',
                     descriptions: [
-                        'Integrate your agents wherever you need them.',
-                        'Vibecode your product using our OpenAPI specification with your favorite tools.',
+                        'Integrate your agents wherever you need them. Vibecode your product using our OpenAPI specification with your favorite tools.',
                     ],
                     boldDescription: 'Direct integration with applications, products, or existing systems.',
                 },
@@ -99,6 +122,16 @@ const IndexPage = () => {
                     boldDescription: "All executed under a unified OS, with full access to each framework's whole plugin ecosystem.",
                 },
                 {
+                    title: 'Custom Model Support',
+                    descriptions: ['Choose from 500,000+ specialized models on Hugging Face. Medical, legal, finance, code, multilingual. Or upload your own proprietary models. PyTorch, TensorFlow, ONNX, Safetensors supported.'],
+                    boldDescription: 'Your models. Your weights. Zero third-party API calls.',
+                },
+                {
+                    title: 'Air-Gapped Inference',
+                    descriptions: ['Deploy models in isolated environments. Prompts, responses, and model weights never touch external servers. Zero data egress. Enterprise compliance for SOC2, GDPR, HIPAA.'],
+                    boldDescription: 'Private inference by design. Your data never leaves your infrastructure.',
+                },
+                {
                     title: 'Agent Identity Layer',
                     descriptions: ['Every agent receives a cryptographic identity with verifiable signatures, optional on-chain anchoring, and agent-to-agent authentication. The foundation for a secure, interoperable agent network.'],
                     boldDescription: 'Verifiable identity. Trustless authentication. Portable across platforms.',
@@ -110,7 +143,13 @@ const IndexPage = () => {
                 },
             ],
             screenshotImage: mainLogo,
-            brandLogos: [solana, solana, solana, solana, solana],
+            brandLogos: [
+                { logo: openclaw, name: 'OpenClaw' },
+                { logo: openai, name: 'OpenAI' },
+                { logo: anthropic, name: 'Anthropic' },
+                { logo: ollama, name: 'Ollama' },
+                { logo: langchain, name: 'LangChain' },
+            ],
         },
         marquee: {
             text: 'TOTAL CONTROL · ONE DASHBOARD · ALL YOUR AGENTS',
@@ -172,8 +211,20 @@ const IndexPage = () => {
                     content: <p>Yes. Each agent runs as an independent instance with isolated, dedicated resources. If you want you can also mix different frameworks (like Eliza and OpenAI) simultaneously in one dashboard.</p>,
                 },
                 {
-                    title: 'Can I choose where my agent runs?',
-                    content: <p>Absolutely. You can deploy agents on our high-performance cloud infrastructure (selecting the specific machine resources to optimize costs) or run them on your local machine paying a one-time export fee.</p>,
+                    title: 'What models can I use?',
+                    content: <p>Any public model from Hugging Face (500K+ options), or upload your own proprietary models. We support PyTorch, TensorFlow, ONNX, and Safetensors formats.</p>,
+                },
+                {
+                    title: 'Where does my data go when I use custom models?',
+                    content: <p>Nowhere. Inference runs within your isolated environment. Prompts, responses, and model weights never touch external servers or third-party APIs.</p>,
+                },
+                {
+                    title: 'Can I use this for regulated industries?',
+                    content: <p>Yes. Air-gapped inference, zero data egress, and SOC2/HIPAA/GDPR compliance make this ideal for healthcare, finance, legal, and government applications.</p>,
+                },
+                {
+                    title: 'Do I pay extra for using my own models?',
+                    content: <p>You only pay for compute resources (CPU/GPU/RAM). No per-token fees, no API charges. Choose hardware that fits your budget and performance needs.</p>,
                 },
             ],
         },
@@ -181,6 +232,9 @@ const IndexPage = () => {
             title: 'The VERCEL/AWS Console for AI agents.',
             buttonText: 'Launch Console',
             buttonHref: '#',
+        },
+        marquee2: {
+            text: 'DEPLOY · SCALE · MONITOR · REPEAT',
         },
         footer: {
             title: <>Your agentic<br/>infrastructure layer</>,
@@ -236,6 +290,20 @@ const IndexPage = () => {
                 brandLogos={data.features.brandLogos}
             />
 
+            <ClaimBlueBlock
+                title={data.claimBlueBlock.title}
+                buttonText={data.claimBlueBlock.buttonText}
+                buttonHref={data.claimBlueBlock.buttonHref}
+            />
+
+            <Marquee text={data.marquee2.text}/>
+
+            <PrivacyClaim
+                mainClaim={data.privacyClaim.mainClaim}
+                subClaim={data.privacyClaim.subClaim}
+                items={data.privacyClaim.items}
+            />
+
             <AgentIdentity
                 sectionTitle={data.agentIdentity.sectionTitle}
                 headline={data.agentIdentity.headline}
@@ -255,12 +323,6 @@ const IndexPage = () => {
                 example={data.agentPayments.example}
                 exampleHighlight={data.agentPayments.exampleHighlight}
                 stats={data.agentPayments.stats}
-            />
-
-            <ClaimBlueBlock
-                title={data.claimBlueBlock.title}
-                buttonText={data.claimBlueBlock.buttonText}
-                buttonHref={data.claimBlueBlock.buttonHref}
             />
             
             <FAQ

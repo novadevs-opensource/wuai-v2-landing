@@ -18,7 +18,7 @@ export default function FAQ({ title, questions }: FAQProps) {
     }));
 
     return (
-        <div className="bg-secondary-500">
+        <div className="bg-secondary-500 border-t border-b border-grain-safe">
             <section id="faq" className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto px-6 py-16 lg:p-12 lg:py-36 scroll-mt-16">
                 <h2 className="w-full lg:text-5xl text-3xl font-space mb-12 text-center font-bold">
                     {title}
