@@ -8,6 +8,7 @@ import AgentPayments from "../components/MainBlocks/AgentPayments";
 import Footer from "../components/MainBlocks/Footer";
 import Jumbotron from "../components/MainBlocks/Jumbotron";
 import Pains from "../components/MainBlocks/Pains";
+import Pricing from "../components/MainBlocks/Pricing";
 import PrivacyClaim from "../components/MainBlocks/PrivacyClaim";
 import Marquee from "../components/Separators/Marquee";
 import openclaw from "../assets/images/brands/openclaw.svg";
@@ -27,6 +28,7 @@ const IndexPage = () => {
                 { name: 'Privacy', href: '#privacy' },
                 { name: 'Identity', href: '#identity' },
                 { name: 'Payments', href: '#payments' },
+                { name: 'Pricing', href: '#pricing' },
                 { name: 'FAQ', href: '#faq' },
                 { name: 'Docs', href: 'https://docs.guayaba.run' },
             ],
@@ -232,6 +234,60 @@ const IndexPage = () => {
             buttonText: 'Launch Console',
             buttonHref: 'https://app.guayaba.run',
         },
+        pricing: {
+            sectionTitle: <><span className='font-light'>[</span>Pricing<span className='font-light'>]</span></>,
+            headline: <>Our subscription plans</>,
+            description: 'Every plan includes dedicated hardware resources, all available AI models, and all channels.',
+            tiers: [
+                {
+                    name: 'Starter',
+                    price: '$4.90',
+                    period: 'month',
+                    description: 'Perfect for experimenting with agents and exploring the platform.',
+                    features: [
+                        '1 agent instance',
+                        'Community support',
+                        'Public model access',
+                        'Basic dashboard',
+                    ],
+                    buttonText: 'Start Free Trial',
+                    buttonHref: 'https://app.guayaba.run',
+                },
+                {
+                    name: 'Pro',
+                    price: '$49',
+                    period: 'month',
+                    description: 'For teams shipping agents to production with dedicated resources.',
+                    features: [
+                        'Up to 3 agent instances',
+                        'Dedicated CPU/GPU allocation',
+                        'Priority support',
+                        'Custom model upload',
+                        'Universal API access',
+                        'Agent Identity Layer',
+                    ],
+                    highlight: true,
+                    buttonText: 'Get Started',
+                    buttonHref: 'https://app.guayaba.run',
+                },
+                {
+                    name: 'Enterprise',
+                    price: 'Custom',
+                    description: 'For organizations requiring air-gapped inference, compliance, and full control.',
+                    features: [
+                        'Unlimited agent instances',
+                        'Custom hardware configuration',
+                        'Air-gapped inference',
+                        'SOC2/HIPAA/GDPR compliance',
+                        'Agent Payments Layer',
+                        'Dedicated account manager',
+                        'SLA guarantee',
+                    ],
+                    buttonText: 'Contact Sales',
+                    buttonHref: 'mailto:david@guayaba.run',
+                },
+            ],
+        },
         marquee2: {
             text: 'DEPLOY · SCALE · MONITOR · REPEAT',
         },
@@ -294,8 +350,6 @@ const IndexPage = () => {
                 buttonHref={data.claimBlueBlock.buttonHref}
             />
 
-            <Marquee text={data.marquee2.text}/>
-
             <PrivacyClaim
                 mainClaim={data.privacyClaim.mainClaim}
                 subClaim={data.privacyClaim.subClaim}
@@ -321,6 +375,15 @@ const IndexPage = () => {
                 example={data.agentPayments.example}
                 exampleHighlight={data.agentPayments.exampleHighlight}
                 stats={data.agentPayments.stats}
+            />
+
+            <Marquee text={data.marquee2.text}/>
+
+            <Pricing
+                sectionTitle={data.pricing.sectionTitle}
+                headline={data.pricing.headline}
+                description={data.pricing.description}
+                tiers={data.pricing.tiers}
             />
             
             <FAQ

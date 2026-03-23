@@ -66,13 +66,13 @@ html.lenis, html.lenis body {
 
 .grain:after {
   animation: grain 8s steps(10) infinite;
-  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+  background-image: url('/noise.svg');
   content: "";
   position: fixed;
   inset: -110% -100%;
   width: 300%;
   height: 300%;
-  opacity: 0.8;
+  opacity: 0.35;
   pointer-events: none;
   z-index: -1;
 }
