@@ -65,29 +65,38 @@ html.lenis, html.lenis body {
 }
 
 .grain:after {
-  animation: grain 8s steps(10) infinite;
+  animation: grain 8s steps(6) infinite;
   background-image: url('/noise.svg');
+  background-repeat: repeat;
+  background-size: 512px 512px;
   content: "";
   position: fixed;
-  inset: -110% -100%;
-  width: 300%;
-  height: 300%;
-  opacity: 0.35;
+  inset: -30%;
+  width: 160%;
+  height: 160%;
+  opacity: 0.30;
   pointer-events: none;
   z-index: -1;
+  will-change: transform;
 }
 
 @keyframes grain {
   0%, 100% { transform:translate(0, 0) }
-  10% { transform:translate(-5%, -10%) }
-  20% { transform:translate(-15%, 5%) }
-  30% { transform:translate(5%, -25%) }
-  40% { transform:translate(-5%, 25%) }
-  50% { transform:translate(-15%, 10%) }
-  60% { transform:translate(15%, 0%) }
-  70% { transform:translate(0%, 15%) }
-  80% { transform:translate(5%, 35%) }
-  90% { transform:translate(-10%, 10%) }
+  16% { transform:translate(-5%, -10%) }
+  33% { transform:translate(-15%, 5%) }
+  50% { transform:translate(5%, -25%) }
+  66% { transform:translate(-5%, 25%) }
+  83% { transform:translate(-15%, 10%) }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain:after {
+    animation: none;
+  }
+  .animate-pattern-slide,
+  .animate-pattern-slide-horizontal {
+    animation: none;
+  }
 }
 
 /* Border color that works better with grain texture */
@@ -239,7 +248,7 @@ html.lenis, html.lenis body {
 }
 
 .animate-pattern-slide {
-  animation: pattern-slide 0.8s linear infinite;
+  animation: pattern-slide 1.4s linear infinite;
 }
 
 /* Horizontal pattern animation for blue blocks */
@@ -253,5 +262,5 @@ html.lenis, html.lenis body {
 }
 
 .animate-pattern-slide-horizontal {
-  animation: pattern-slide-horizontal 0.8s linear infinite;
+  animation: pattern-slide-horizontal 1.4s linear infinite;
 }

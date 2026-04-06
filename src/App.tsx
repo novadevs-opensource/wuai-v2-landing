@@ -16,7 +16,7 @@ function ScrollToTop() {
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      lerp: 0.08,
+      lerp: 0.15,
       smoothWheel: true,
       anchors: true,
     });
