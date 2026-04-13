@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    background: white;
+}
+
+/* Content sits above the grain canvas (z-index: 0 via portal in body) */
+#root {
+    position: relative;
+    z-index: 1;
+}
+
 html.lenis, html.lenis body {
     height: auto;
 }
@@ -55,44 +65,19 @@ html.lenis, html.lenis body {
   }
 }
 
-/* Grain / noise overlay effect.
-   clip-path on the parent clips the fixed pseudo-element to the
-   container's visible box — no overflow issues AND no scroll jank. */
+/* Sections with .grain become transparent, revealing the noise canvas behind #root */
 .grain {
-  position: relative;
-  clip-path: inset(0);
-  isolation: isolate;
+  background-color: transparent !important;
 }
 
-.grain:after {
-  animation: grain 8s steps(6) infinite;
-  background-image: url('/noise.svg');
-  background-repeat: repeat;
-  background-size: 512px 512px;
-  content: "";
-  position: fixed;
-  inset: -30%;
-  width: 160%;
-  height: 160%;
-  opacity: 0.30;
-  pointer-events: none;
-  z-index: -1;
-  will-change: transform;
-}
-
-@keyframes grain {
-  0%, 100% { transform:translate(0, 0) }
-  16% { transform:translate(-5%, -10%) }
-  33% { transform:translate(-15%, 5%) }
-  50% { transform:translate(5%, -25%) }
-  66% { transform:translate(-5%, 25%) }
-  83% { transform:translate(-15%, 10%) }
+/* Bordered grain sections: white lateral margins via box-shadow,
+   clipped vertically so it doesn't bleed into adjacent sections */
+.grain.bordered-container {
+  box-shadow: 0 0 0 9999px white;
+  clip-path: inset(0px -9999px);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .grain:after {
-    animation: none;
-  }
   .animate-pattern-slide,
   .animate-pattern-slide-horizontal {
     animation: none;

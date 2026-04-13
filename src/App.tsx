@@ -4,6 +4,7 @@ import Lenis from 'lenis';
 import IndexPage from './pages/IndexPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import WebGLNoise from './components/Common/WebGLNoise';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -33,6 +34,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <WebGLNoise />
       <Routes>
         <Route path="/" element={<IndexPage />} />
         <Route path="/terms" element={<TermsOfServicePage />} />

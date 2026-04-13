@@ -102,8 +102,8 @@ const PromoModal: React.FC<PromoModalProps> = ({ slides }) => {
                   {slide.panelContent}
                 </div>
 
-                {/* Bottom/Right: Content — white + grain, scrollable on mobile */}
-                <div className="flex-1 bg-white grain overflow-y-auto min-h-0">
+                {/* Bottom/Right: Content — white, scrollable on mobile */}
+                <div className="flex-1 bg-white overflow-y-auto min-h-0">
                   <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 py-8 sm:py-12">
                     {/* Tag */}
                     <span className="inline-block self-start px-3 py-1 border border-primary-500 text-primary-500 text-xs font-semibold uppercase tracking-widest mb-5 font-anon">

@@ -52,7 +52,7 @@ export default function TermsOfServicePage() {
       </div>
 
       <div className="border-t border-b border-gray-400">
-      <div className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto grain bg-white">
+      <div className="border border-gray-400 border-t-0 border-b-0 bordered-container mx-auto bg-white">
         {/* Content */}
         <article className="max-w-4xl mx-auto px-6 md:px-12 py-12 font-anek-latin text-gray-800 leading-relaxed">
         <Section title="1. Acceptance of Terms">

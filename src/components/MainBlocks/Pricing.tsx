@@ -22,7 +22,7 @@ export interface PricingProps {
 
 export default function Pricing({ sectionTitle, headline, description, tiers }: PricingProps) {
     return (
-        <section id="pricing" className="bg-gray-100 overflow-hidden relative border-t border-gray-400 scroll-mt-16">
+        <section id="pricing" className="grain overflow-hidden relative border-t border-gray-400 scroll-mt-16">
 
             <div className="max-w-7xl mx-auto md:px-12 px-6 py-20 md:py-28 relative z-10">
                 {/* ── Header ── */}

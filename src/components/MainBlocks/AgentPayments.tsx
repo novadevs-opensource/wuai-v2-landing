@@ -77,7 +77,7 @@ export default function AgentPayments({
             </div>
 
             {/* ── Numbered features ── */}
-            <div className="grid grid-cols-1 md:grid-cols-3 border-b border-gray-400 divide-y md:divide-y-0 md:divide-x divide-gray-400">
+            <div className="grid grid-cols-1 bg-white md:grid-cols-3 border-b border-gray-400 divide-y md:divide-y-0 md:divide-x divide-gray-400">
                 {features.map((item) => (
                     <div key={item.num} className="p-6 md:p-8">
                         <span className="font-anon text-sm text-gray-400 tracking-widest block mb-4">

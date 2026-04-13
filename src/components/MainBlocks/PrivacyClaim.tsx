@@ -71,7 +71,7 @@ export default function PrivacyClaim({ mainClaim, subClaim, items }: PrivacyClai
                         {items.map((item, i) => (
                             <div 
                                 key={i} 
-                                className={`p-10 lg:p-12 ${i < items.length - 1 ? 'border-b' : ''} md:border-b-0 ${i < items.length - 1 ? 'md:border-r' : ''} border-gray-400 flex flex-col`}
+                                className={`p-10 lg:p-12 ${i < items.length - 1 ? 'border-b' : ''} md:border-b-0 ${i < items.length - 1 ? 'md:border-r' : ''} border-gray-400 flex flex-col bg-white`}
                             >
                                 {/* Simple number */}
                                 <span className="font-anon text-xs text-black/30 tracking-widest mb-6 block">
