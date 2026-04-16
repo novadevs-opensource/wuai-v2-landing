@@ -40,12 +40,12 @@ const IndexPage = () => {
             buttonHref: 'https://app.guayaba.run',
         },
         jumbotron: {
-            title: 'Your agentic infrastructure layer.',
-            mainClaim: 'All your agents',
+            title: 'The AI ops cloud. Built for builders.',
+            mainClaim: 'Deploy. Harness. Scale.',
             claims: [
-                'unified',
-                'without CLI',
-                'production-ready',
+                'No code.',
+                'No dev-ops.',
+                'No limits.',
             ],
             buttonText: 'Launch Console',
             buttonHref: 'https://app.guayaba.run',
@@ -69,8 +69,8 @@ const IndexPage = () => {
                 },
                 {
                     icon: <HiOutlineCodeBracketSquare />,
-                    title: 'Curated Marketplace',
-                    description: 'Every skill in our marketplace is reviewed and verified by our team before publication, ensuring security, reliability, and zero risk of malware.', //Publish your own plugins from GitHub and start monetizing with built-in usage metering.',
+                    title: 'GRAFT Marketplace',
+                    description: <>Browse production-ready <strong>GRAFTs</strong>: pre-configured agent templates bundling skills, tools, and runtime settings. Every <strong>GRAFT</strong> is reviewed and verified by our team. Deploy a complete agent in one click.</>,
                 },
             ],
         },
@@ -80,7 +80,7 @@ const IndexPage = () => {
             items: [
                 {
                     title: 'Hugging Face Integration',
-                    description: 'Medical, legal, finance, code, multilingual—use models specifically trained for your industry. Browse, test, and deploy from 500K+ models in one click. No API keys, no third parties, no data leaks.',
+                    description: 'Medical, legal, finance, code, multilingual: use models specifically trained for your industry. Browse, test, and deploy from 500K+ models in one click. No API keys, no third parties, no data leaks.',
                 },
                 {
                     title: 'Upload Your Own Model',
@@ -100,9 +100,9 @@ const IndexPage = () => {
         agents: {
             features: [
                 {
-                    title: 'Curated Skills Marketplace',
-                    descriptions: ['Extend agent capabilities through a marketplace where every skill is reviewed and verified by our team. Add skills with confidence, no risk of malware or unreliable integrations. Connect external sources and compose behaviors without modifying the agent core.'],
-                    boldDescription: 'A secure, curated ecosystem you can trust. All in one place.',
+                    title: 'GRAFT Marketplace',
+                    descriptions: [<>A <strong>GRAFT</strong> (<span className="underline">Guayaba Runtime Agent Framework Template</span>) is a production-ready, deployable package that bundles skills, tools, and runtime configurations into a single template. Browse our curated marketplace, pick the right template for your use case, customize it, and go to production. Every template is reviewed and verified by our team.</>],
+                    boldDescription: 'Production-ready agent templates. One click to deploy.',
                 },
                 {
                     title: 'Resource Allocation: Optimize your costs',
@@ -324,8 +324,8 @@ const IndexPage = () => {
                     text: 'The open-source agent is now fully integrated. Create, configure, and launch OpenClaw agents from your dashboard.',
                 },
                 {
-                    bold: 'Full plugin ecosystem access.',
-                    text: 'Browse and install skills from the curated marketplace. Every skill is reviewed and verified—zero risk of malware.',
+                    bold: 'Full GRAFT ecosystem access.',
+                    text: <>Browse and deploy agent templates from the <strong>GRAFT</strong> marketplace. Every template is reviewed and verified. Production-ready out of the box.</>,
                 },
                 {
                     bold: 'Multi-framework compatible.',

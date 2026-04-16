@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 
 interface BulletPoint {
   bold: string;
-  text: string;
+  text: React.ReactNode;
 }
 
 export interface PromoSlide {
