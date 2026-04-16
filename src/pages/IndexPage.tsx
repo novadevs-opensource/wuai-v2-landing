@@ -349,45 +349,6 @@ const IndexPage = () => {
             ),
         },
         {
-            tag: 'Welcome Gift',
-            title: '$200 in Credits for New Users',
-            bullets: [
-                {
-                    bold: 'No payments required.',
-                    text: 'Create your account and start deploying agents immediately.',
-                },
-                {
-                    bold: 'Use credits on any resource.',
-                    text: 'Spend them on LLM inference, cloud compute, storage, or any combination. You decide how to allocate them.',
-                },
-                {
-                    bold: 'No payments until month two.',
-                    text: 'Your first month is fully covered by the welcome credits. Cancel anytime, no commitments, no hidden fees.',
-                },
-            ],
-            buttonText: 'Claim Your Credits',
-            buttonHref: 'https://app.guayaba.run',
-            panelBg: 'bg-secondary-500',
-            panelContent: (
-                <>
-                    <img src={guayabaWhiteLogo} alt="" className="absolute w-[60%] md:w-auto md:h-[70%] opacity-[0.06] md:-rotate-90 select-none pointer-events-none z-[1]" style={{ filter: 'brightness(0)' }} />
-                    <span className="font-space font-extrabold text-5xl md:text-7xl text-black relative z-10 drop-shadow-sm">$200</span>
-                    <span className="font-anon text-black/70 text-[11px] md:text-sm font-bold uppercase tracking-widest mt-1 md:mt-2 relative z-10">Free Credits</span>
-                    <div className="flex gap-4 md:gap-6 mt-3 md:mt-6 relative z-10">
-                        <div className="text-center">
-                            <span className="font-space font-extrabold text-xl md:text-2xl text-black block">LLM</span>
-                            <span className="font-anon text-[10px] md:text-[11px] text-black/60 font-semibold uppercase">Inference</span>
-                        </div>
-                        <div className="w-[2px] bg-black/30" />
-                        <div className="text-center">
-                            <span className="font-space font-extrabold text-xl md:text-2xl text-black block">HW</span>
-                            <span className="font-anon text-[10px] md:text-[11px] text-black/60 font-semibold uppercase">Resources</span>
-                        </div>
-                    </div>
-                </>
-            ),
-        },
-        {
             tag: 'Referral Program',
             title: 'Refer & Earn 5000 Credits Each',
             bullets: [
