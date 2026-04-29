@@ -26,7 +26,7 @@ permissions:
 
 env:
   NODE_VERSION: 23
-  DIR_TO_UPLOAD: dist
+  DIR_TO_UPLOAD: out
 
 defaults:
   run:

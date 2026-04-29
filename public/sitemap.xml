@@ -2,20 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://guayaba.run/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://guayaba.run/terms</loc>
-    <lastmod>2026-03-26</lastmod>
+    <loc>https://guayaba.run/terms/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://guayaba.run/privacy-policy</loc>
-    <lastmod>2026-03-26</lastmod>
+    <loc>https://guayaba.run/privacy-policy/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 </urlset>
+
